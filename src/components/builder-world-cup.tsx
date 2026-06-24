@@ -480,8 +480,8 @@ export function BuilderWorldCup() {
           </div>
         </header>
 
-        <section className="mx-auto grid max-w-7xl items-start gap-8 px-4 pt-5 pb-6 sm:px-5 sm:pt-6 sm:pb-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-10">
-          <div>
+        <section className="mx-auto grid max-w-7xl items-start gap-8 px-4 pt-5 pb-6 sm:px-5 sm:pt-6 sm:pb-8 lg:grid-cols-[340px_minmax(0,1fr)] lg:gap-10">
+          <div className="order-2 lg:col-start-2">
             {!selectedPackData ? (
               <section className={SURFACE_CARD}>
                 <SectionHeading
@@ -682,7 +682,7 @@ export function BuilderWorldCup() {
             )}
           </div>
 
-          <aside className="space-y-5 lg:sticky lg:top-14 lg:self-start">
+          <aside className="order-1 space-y-5 lg:sticky lg:top-14 lg:col-start-1 lg:row-start-1 lg:self-start">
             {notice ? (
               <p className="rounded-2xl border border-neon/20 bg-neon/[0.06] p-4 text-sm text-neon">
                 {notice}
