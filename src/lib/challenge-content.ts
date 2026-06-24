@@ -39,7 +39,6 @@ export const uiCopy = {
     close: "Close",
     optional: "Optional",
     timer: {
-      label: "Time left",
       poweredBy: "Powered by",
       ariaLabel: (time: string) => `Time remaining ${time}`,
     },
@@ -190,7 +189,6 @@ export const uiCopy = {
     close: "Cerrar",
     optional: "Opcional",
     timer: {
-      label: "Tiempo",
       poweredBy: "Powered by",
       ariaLabel: (time: string) => `Tiempo restante ${time}`,
     },
@@ -229,9 +227,9 @@ export const uiCopy = {
     },
     emptyTrackState: {
       section: "Track",
-      title: "Elige un track.",
+      title: "Elegí un track.",
       body:
-        "Tienes 10 minutos para leer el objetivo, entender el caso y elegir un before/after pequeño. No empieces con una idea de app. Empieza con el track.",
+        "Tenés 10 minutos para leer el objetivo, entender el caso y elegir un before/after chico. No arranques con una idea de app. Arrancá por el track.",
     },
     packSheet: {
       track: "Track",
@@ -285,7 +283,7 @@ export const uiCopy = {
       copyIdle: "Copiar prompt del árbitro",
     },
     sidebar: {
-      pickTrack: "Elige un track",
+      pickTrack: "Elegí un track",
       selected: "Seleccionado",
       track: "Track",
     },
@@ -486,7 +484,7 @@ const enPacks: ChallengePack[] = [
 const esPacks: ChallengePack[] = [
   {
     id: "Internet Money",
-    title: "Internet Money",
+    title: "Plata online",
     summary: "Ana necesita la promesa paga más chica que pueda testear rápido.",
     pickIf:
       "Te gustan micro-SaaS, nichos aburridos, pricing, indie hacking o herramientas pagas de workflow.",
@@ -510,7 +508,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Boring Work Killer",
-    title: "Boring Work Killer",
+    title: "Mata lo aburrido",
     summary: "Mata una tarea recurrente que la gente ya odia hacer.",
     pickIf:
       "Te gustan automatizaciones, internal tools, resúmenes, ops, soporte, QA, CRM o workflows de productividad.",
@@ -531,7 +529,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Stupid App, Real Distribution",
-    title: "Stupid App, Real Distribution",
+    title: "App absurda, distribución real",
     summary: "Haz una cosa tonta de internet que la gente sí quiera compartir.",
     pickIf:
       "Te gustan apps raras, memes, roasts, quizzes, etiquetas de identidad, share cards o juguetes virales.",
@@ -554,7 +552,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Autopilot Agents",
-    title: "Autopilot Agents",
+    title: "Agentes en piloto automático",
     summary: "Haz que un agente despierte, revise contexto e interrumpa solo cuando sirve.",
     pickIf:
       "Te gustan agentes, automatizaciones, alertas, Telegram, WhatsApp, Slack, email, APIs, monitoreo o interrupciones útiles.",
@@ -587,7 +585,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Bring Your Idea",
-    title: "Bring Your Idea",
+    title: "Traé tu idea",
     summary: "Achica tu propia idea hasta un antes/después visible.",
     pickIf:
       "Ya tienes un problema, workflow, idea de startup, juguete divertido, automatización personal o concepto de app.",

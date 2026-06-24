@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
+import { Orbitron, Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -10,6 +10,12 @@ const plusJakarta = Plus_Jakarta_Sans({
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
+});
+
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
+  subsets: ["latin"],
+  weight: ["600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +61,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakarta.variable} ${robotoMono.variable} h-full`}
+      className={`${plusJakarta.variable} ${robotoMono.variable} ${orbitron.variable} h-full`}
     >
       <body className="flex min-h-full flex-col antialiased">{children}</body>
     </html>
