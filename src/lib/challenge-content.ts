@@ -39,6 +39,7 @@ export const uiCopy = {
     close: "Close",
     optional: "Optional",
     timer: {
+      label: "Time left",
       poweredBy: "Powered by",
       ariaLabel: (time: string) => `Time remaining ${time}`,
     },
@@ -46,7 +47,7 @@ export const uiCopy = {
       eyebrow: "Builder World Cup",
       title: "AI World Cup",
       description:
-        "A 90-minute AI build challenge. Start the clock, unlock a problem sheet, ship one tiny tool. Argentina vs Vietnam, who's the real goat?",
+        "A 60-minute AI build challenge. Start the clock, unlock a problem sheet, ship one tiny tool. Argentina vs Vietnam, who's the real goat?",
       partners: "Partners",
       startButton: "Start The Challenge",
     },
@@ -69,7 +70,7 @@ export const uiCopy = {
       teamSizeOptional: "optional",
       solo: "solo",
       duo: "duo",
-      submitIdle: "Start My 90 Minutes",
+      submitIdle: "Start My 60 Minutes",
       submitLoading: "Starting...",
     },
     sessionHeader: {
@@ -189,6 +190,7 @@ export const uiCopy = {
     close: "Cerrar",
     optional: "Opcional",
     timer: {
+      label: "Tiempo",
       poweredBy: "Powered by",
       ariaLabel: (time: string) => `Tiempo restante ${time}`,
     },
@@ -196,7 +198,7 @@ export const uiCopy = {
       eyebrow: "Builder World Cup",
       title: "AI World Cup",
       description:
-        "Un desafío de 90 minutos para construir con IA. Arranca el reloj, desbloquea un problema y shippea una tiny tool. Argentina vs Vietnam: ¿quién es el verdadero GOAT?",
+        "Un desafío de 60 minutos para construir con IA. Arranca el reloj, desbloquea un problema y shippea una tiny tool. Argentina vs Vietnam: ¿quién es el verdadero GOAT?",
       partners: "Partners",
       startButton: "Empezar el challenge",
     },
@@ -219,7 +221,7 @@ export const uiCopy = {
       teamSizeOptional: "opcional",
       solo: "solo",
       duo: "duo",
-      submitIdle: "Empezar mis 90 minutos",
+      submitIdle: "Empezar mis 60 minutos",
       submitLoading: "Empezando...",
     },
     sessionHeader: {
@@ -227,9 +229,9 @@ export const uiCopy = {
     },
     emptyTrackState: {
       section: "Track",
-      title: "Elegí un track.",
+      title: "Elige un track.",
       body:
-        "Tenés 10 minutos para leer el objetivo, entender el caso y elegir un before/after chico. No arranques con una idea de app. Arrancá por el track.",
+        "Tienes 10 minutos para leer el objetivo, entender el caso y elegir un before/after pequeño. No empieces con una idea de app. Empieza con el track.",
     },
     packSheet: {
       track: "Track",
@@ -283,7 +285,7 @@ export const uiCopy = {
       copyIdle: "Copiar prompt del árbitro",
     },
     sidebar: {
-      pickTrack: "Elegí un track",
+      pickTrack: "Elige un track",
       selected: "Seleccionado",
       track: "Track",
     },
@@ -436,7 +438,7 @@ const enPacks: ChallengePack[] = [
       "One of the best things about Hermes Agent is that it can live where you already live: Telegram, WhatsApp, Slack, Discord, email, calendars, APIs, databases, monitoring tools, or any other place where signals appear.",
       "Most AI apps wait for you to open them and ask a question. An Autopilot Agent does the opposite. It wakes up because time passed, something happened, or a real-world trigger fired. Then it checks context, decides if the signal matters, and sends one useful message or action.",
       "This can be personal, operational, protective, money-making, funny, or football-related. The point is not to forward more noise. The point is to interrupt someone only when the agent has something worth saying.",
-      "You can use real integrations, simulated integrations, or a mocked Telegram/WhatsApp/Slack notification if that makes the demo clearer in 90 minutes.",
+      "You can use real integrations, simulated integrations, or a mocked Telegram/WhatsApp/Slack notification if that makes the demo clearer in 60 minutes.",
     ],
     exampleWorlds: [
       "World Cup Match Radar: every morning, the agent checks match schedules, timezone, favorite teams, stakes, and your calendar, then sends the one match worth watching today.",
@@ -484,7 +486,7 @@ const enPacks: ChallengePack[] = [
 const esPacks: ChallengePack[] = [
   {
     id: "Internet Money",
-    title: "Plata online",
+    title: "Internet Money",
     summary: "Ana necesita la promesa paga más chica que pueda testear rápido.",
     pickIf:
       "Te gustan micro-SaaS, nichos aburridos, pricing, indie hacking o herramientas pagas de workflow.",
@@ -508,7 +510,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Boring Work Killer",
-    title: "Mata lo aburrido",
+    title: "Boring Work Killer",
     summary: "Mata una tarea recurrente que la gente ya odia hacer.",
     pickIf:
       "Te gustan automatizaciones, internal tools, resúmenes, ops, soporte, QA, CRM o workflows de productividad.",
@@ -529,7 +531,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Stupid App, Real Distribution",
-    title: "App absurda, distribución real",
+    title: "Stupid App, Real Distribution",
     summary: "Haz una cosa tonta de internet que la gente sí quiera compartir.",
     pickIf:
       "Te gustan apps raras, memes, roasts, quizzes, etiquetas de identidad, share cards o juguetes virales.",
@@ -552,7 +554,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Autopilot Agents",
-    title: "Agentes en piloto automático",
+    title: "Autopilot Agents",
     summary: "Haz que un agente despierte, revise contexto e interrumpa solo cuando sirve.",
     pickIf:
       "Te gustan agentes, automatizaciones, alertas, Telegram, WhatsApp, Slack, email, APIs, monitoreo o interrupciones útiles.",
@@ -562,7 +564,7 @@ const esPacks: ChallengePack[] = [
       "Una de las mejores cosas de Hermes Agent es que puede vivir donde ya vives: Telegram, WhatsApp, Slack, Discord, email, calendarios, APIs, bases de datos, herramientas de monitoreo o cualquier otro lugar donde aparecen señales.",
       "La mayoría de las apps de IA esperan que las abras y hagas una pregunta. Un Autopilot Agent hace lo contrario. Se despierta porque pasó el tiempo, ocurrió algo o se activó un trigger del mundo real. Después revisa contexto, decide si la señal importa y envía un mensaje o acción útil.",
       "Esto puede ser personal, operativo, protector, monetizable, gracioso o relacionado con fútbol. El punto no es reenviar más ruido. El punto es interrumpir a alguien solo cuando el agente tiene algo que vale la pena decir.",
-      "Puedes usar integraciones reales, integraciones simuladas o una notificación mockeada de Telegram/WhatsApp/Slack si eso hace más clara la demo en 90 minutos.",
+      "Puedes usar integraciones reales, integraciones simuladas o una notificación mockeada de Telegram/WhatsApp/Slack si eso hace más clara la demo en 60 minutos.",
     ],
     exampleWorlds: [
       "World Cup Match Radar: cada mañana, el agente revisa calendarios de partidos, zona horaria, equipos favoritos, stakes y tu calendario, y después envía el único partido que vale la pena ver hoy.",
@@ -585,7 +587,7 @@ const esPacks: ChallengePack[] = [
   },
   {
     id: "Bring Your Idea",
-    title: "Traé tu idea",
+    title: "Bring Your Idea",
     summary: "Achica tu propia idea hasta un antes/después visible.",
     pickIf:
       "Ya tienes un problema, workflow, idea de startup, juguete divertido, automatización personal o concepto de app.",
@@ -674,7 +676,7 @@ Ask me:
 Only help build or code after I explicitly choose building.
 
 Challenge rules:
-- I have 90 minutes.
+- I have 60 minutes.
 - The output must be demoable in 60-90 seconds.
 - The tool should create a clear before/after.
 - It should be useful, funny, money-making, or surprisingly cool.
@@ -733,7 +735,7 @@ Pregúntame:
 Solo ayuda a construir o codear después de que yo elija explícitamente construir.
 
 Reglas del challenge:
-- Tengo 90 minutos.
+- Tengo 60 minutos.
 - El output debe poder demoearse en 60-90 segundos.
 - La herramienta debe crear un before/after claro.
 - Debe ser útil, divertida, monetizable o sorprendentemente cool.

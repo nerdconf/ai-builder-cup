@@ -20,7 +20,7 @@ npm run build
 
 ## Session Persistence
 
-The app creates a 90-minute challenge session through `POST /api/sessions`.
+The app creates a 60-minute challenge session through `POST /api/sessions`.
 
 If Supabase env vars are missing, the app remains build-safe and uses:
 

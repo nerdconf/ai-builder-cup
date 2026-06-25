@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Orbitron, Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -12,19 +12,13 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
-const orbitron = Orbitron({
-  variable: "--font-orbitron",
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
-
 export const metadata: Metadata = {
   title: {
     default: "AI Builder Cup | NERDCONF",
     template: "%s | AI Builder Cup",
   },
   description:
-    "A 90-minute AI build challenge with Hermes Agent and Nebius Token Factory.",
+    "A 60-minute AI build challenge with Hermes Agent and Nebius Token Factory.",
   applicationName: "AI Builder Cup",
   keywords: [
     "AI Builder Cup",
@@ -38,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Builder Cup | NERDCONF",
     description:
-      "A 90-minute AI build challenge with Hermes Agent and Nebius Token Factory.",
+      "A 60-minute AI build challenge with Hermes Agent and Nebius Token Factory.",
     type: "website",
     siteName: "AI Builder Cup",
   },
@@ -61,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakarta.variable} ${robotoMono.variable} ${orbitron.variable} h-full`}
+      className={`${plusJakarta.variable} ${robotoMono.variable} h-full`}
     >
       <body className="flex min-h-full flex-col antialiased">{children}</body>
     </html>

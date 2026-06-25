@@ -39,7 +39,7 @@ export type UpdateSessionInput = {
   xPostUrl?: string | null;
 };
 
-const CHALLENGE_MS = 90 * 60 * 1000;
+const CHALLENGE_MS = 60 * 60 * 1000;
 const memorySessions = new Map<string, ChallengeSession>();
 let supabase: SupabaseClient | null = null;
 
