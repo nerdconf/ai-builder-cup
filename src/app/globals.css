@@ -15,6 +15,7 @@
   --color-neon-hover: #00cc00;
   --font-sans: "Plus Jakarta Sans", "Plus Jakarta Sans Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Roboto Mono", "Roboto Mono Fallback", ui-monospace, monospace;
+  --font-timer: var(--font-orbitron), ui-sans-serif, system-ui, sans-serif;
   --font-open: "Plus Jakarta Sans", "Plus Jakarta Sans Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-clash: "Plus Jakarta Sans", "Plus Jakarta Sans Fallback", ui-sans-serif, system-ui, sans-serif;
 }
@@ -54,4 +55,89 @@ textarea:focus-visible {
 ::selection {
   background: var(--neon);
   color: #000000;
+}
+
+@layer components {
+  .nav-scrim {
+    background: linear-gradient(
+      to bottom,
+      hsl(0, 0%, 0%) 0%,
+      hsla(0, 0%, 0%, 0.738) 19%,
+      hsla(0, 0%, 0%, 0.541) 34%,
+      hsla(0, 0%, 0%, 0.382) 47%,
+      hsla(0, 0%, 0%, 0.278) 56.5%,
+      hsla(0, 0%, 0%, 0.194) 65%,
+      hsla(0, 0%, 0%, 0.126) 73%,
+      hsla(0, 0%, 0%, 0.075) 80.2%,
+      hsla(0, 0%, 0%, 0.042) 86.1%,
+      hsla(0, 0%, 0%, 0.021) 91%,
+      hsla(0, 0%, 0%, 0.008) 95.2%,
+      hsla(0, 0%, 0%, 0.002) 98.2%,
+      hsla(0, 0%, 0%, 0) 100%
+    );
+  }
+
+  .brief-section-heading {
+    @apply text-xl font-semibold leading-tight text-white sm:text-2xl;
+  }
+
+  .brief-section-index {
+    @apply shrink-0 text-right font-mono text-xl font-bold tabular-nums leading-none sm:text-2xl;
+  }
+
+  .brief-lead {
+    @apply font-clash text-base font-semibold leading-relaxed tracking-normal text-white/90 sm:text-lg;
+  }
+
+  .brief-body {
+    @apply font-open text-[15px] leading-7 text-white/75 sm:text-base sm:leading-8;
+  }
+
+  .brief-list {
+    @apply mt-5 max-w-3xl space-y-3;
+  }
+
+  .brief-list > li {
+    @apply relative pl-5 before:absolute before:left-0 before:top-[0.7em] before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-white/25;
+  }
+
+  .brief-disclosure {
+    @apply max-w-3xl border-t border-white/[0.06] pt-6;
+  }
+
+  .brief-disclosure summary {
+    @apply flex cursor-pointer list-none items-center justify-between gap-3 py-1 text-base font-semibold text-white;
+  }
+
+  .brief-disclosure-toggle {
+    @apply shrink-0 text-xs font-medium text-white/45;
+  }
+
+  .brief-disclosure-meta {
+    @apply ml-2 text-sm font-normal text-white/40;
+  }
+
+  .brief-form {
+    @apply mt-5 grid max-w-2xl gap-8;
+  }
+
+  .brief-form-field {
+    @apply grid gap-2;
+  }
+
+  .brief-form-label {
+    @apply text-sm font-semibold text-white;
+  }
+
+  .brief-form-hint {
+    @apply text-sm leading-6 text-white/50;
+  }
+
+  .brief-field {
+    @apply min-h-20 w-full resize-y border-0 border-b border-white/20 bg-transparent px-0 py-3 text-sm leading-6 text-white outline-none placeholder:text-white/30 focus:border-neon/60;
+  }
+
+  .sidebar-panel-title {
+    @apply mt-5 text-xl font-bold tracking-tight text-white;
+  }
 }

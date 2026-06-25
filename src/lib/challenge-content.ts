@@ -147,7 +147,7 @@ export const uiCopy = {
       description: "Post your demo on X. Saving the URL here is optional.",
       xPostUrl: "X post URL",
       placeholder: "https://x.com/...",
-      saveIdle: "Save Optional URL",
+      saveIdle: "Save URL",
       saveLoading: "Saving...",
     },
     notices: {
@@ -298,7 +298,7 @@ export const uiCopy = {
       description: "Postea tu demo en X. Guardar la URL acá es opcional.",
       xPostUrl: "URL del post en X",
       placeholder: "https://x.com/...",
-      saveIdle: "Guardar URL opcional",
+      saveIdle: "Guardar URL",
       saveLoading: "Guardando...",
     },
     notices: {
