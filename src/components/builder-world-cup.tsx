@@ -39,7 +39,7 @@ type FormState = {
 
 const STORAGE_KEY = "builder-world-cup-session-v1";
 const CHALLENGE_MS = 60 * 60 * 1000;
-const CREDITS_TUTORIAL_URL = "https://x.com/nerdconf_ar";
+const CREDITS_TUTORIAL_URL = "https://nerdconf.notion.site/nebius-x-hermes?pvs=74";
 const partnerLogos = [
   {
     name: "Nebius",
