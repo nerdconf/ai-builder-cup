@@ -703,7 +703,44 @@ export function BuilderWorldCup() {
                 ariaLabel={copy.timer.ariaLabel(formatRemaining(remainingMs))}
                 remainingMs={remainingMs}
               />
-              <h2 className="sidebar-panel-title">
+              <div className="mt-5 border-b border-white/[0.08] pb-5">
+                <p className="text-[9px] font-semibold uppercase tracking-[0.14em] text-white/42">
+                  {copy.hero.partners}
+                </p>
+                <div className="mt-3 space-y-3">
+                  {["primary", "secondary"].map((tier) => (
+                    <div
+                      className={`flex items-center gap-x-3 gap-y-3 ${
+                        tier === "primary" ? "flex-nowrap" : "flex-wrap"
+                      }`}
+                      key={tier}
+                    >
+                      {partnerLogos
+                        .filter((logo) => logo.tier === tier)
+                        .map((logo) => (
+                          <a
+                            aria-label={`Open ${logo.name}`}
+                            href={logo.href}
+                            key={logo.name}
+                            rel="noreferrer"
+                            target="_blank"
+                          >
+                            <Image
+                              alt={logo.name}
+                              className={`${logo.className} opacity-75 grayscale transition hover:opacity-100`}
+                              height={logo.height}
+                              loading="eager"
+                              src={logo.src}
+                              unoptimized={logo.unoptimized}
+                              width={logo.width}
+                            />
+                          </a>
+                        ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <h2 className="sidebar-panel-title mt-5">
                 {copy.sidebar.pickTrack}
               </h2>
               <div className="mt-4 divide-y divide-white/[0.06]">
@@ -733,28 +770,6 @@ export function BuilderWorldCup() {
                     </button>
                   );
                 })}
-              </div>
-              <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-white/[0.08] pt-5">
-                <span className="text-[9px] font-semibold uppercase tracking-[0.14em] text-white/30">
-                  {copy.timer.poweredBy}
-                </span>
-                <Image
-                  alt="Nebius"
-                  className="h-3.5 w-auto max-w-[72px] object-contain opacity-45 grayscale"
-                  height={36}
-                  loading="eager"
-                  src="/logos/nebius.svg"
-                  width={131}
-                />
-                <Image
-                  alt="Hermes Agent"
-                  className="h-3.5 w-auto max-w-[124px] object-contain opacity-45 grayscale"
-                  height={120}
-                  loading="eager"
-                  src="/logos/hermesagent-normalized.png"
-                  unoptimized
-                  width={1000}
-                />
               </div>
             </section>
 
@@ -926,17 +941,9 @@ export function BuilderWorldCup() {
 
         <div className={SURFACE_CARD}>
           {!showGate ? (
-            <div>
-              <p className="text-sm font-semibold text-white/45">
-                {copy.preStart.label}
-              </p>
-              <p className="mt-4 text-2xl font-semibold leading-8">
-                {copy.preStart.title}
-              </p>
-              <p className="mt-4 text-sm leading-6 text-white/55">
-                {copy.preStart.credits}
-              </p>
-            </div>
+            <p className="text-sm leading-6 text-white/55">
+              {copy.preStart.credits}
+            </p>
           ) : (
             <form className="grid gap-4" onSubmit={startChallenge}>
               <div>
